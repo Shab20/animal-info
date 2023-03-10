@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Animals in {{ family.name }}</title>
+</head>
+<body>
+	<h1>Animals in {{ family.name }}</h1>
+	<ul>
+	{% for animal in animals %}
+		<li><a href="/animal/{{ animal.id }}">{{ animal.name }}</a></li>
+	{% empty %}
+		<p>No animals found in this family</p>
+	{% endfor %}
+	</ul>
+</body>
+</html>
+
+
+			

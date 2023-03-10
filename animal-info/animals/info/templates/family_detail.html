@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{{ animal.name }} Information</title>
+</head>
+<body>
+	<h1>{{ animal.name }} Information</h1>
+	<p>Legs: {{ animal.legs }}</p>
+	<p>Weight: {{ animal.weight }} kg</p>
+	<p>Height: {{ animal.height }} m</p>
+	<p>Speed: {{ animal.speed }} km/h</p>
+	<p>Family: <a href="/family/{{ animal.family.id }}">{{ animal.family.name }}</a></p>
+</body>
+</html>
+
